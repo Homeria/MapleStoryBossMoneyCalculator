@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapleBossMoneyCalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="ui-container">
+
+  <div class="wrapper">
+    <div class="title">
+      <h1 id="kr"> 보스 결정석 계산기</h1>
+      <h1> | </h1>
+      <h1 id="en"> BOSS CRYSTAL CALCULATOR</h1>
+    </div>
+    <div class="reset-container">
+      <button id="reset">리셋</button>
+    </div>
+  </div>
+  
+  
+  
+
+  <p id="output">결정석 값 총합 : </p>
+
+  
+
+  
+
+  <table>
+  <tbody>
+    <tr class="group">
+      <td id="boss-name" class="boss-name-first"><h3>자쿰</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="8983579" id="chaos"><img src="Source/Chaos-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container" id="spinner-first">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>매그너스</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="10688302" id="hard"><img src="Source/Hard-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>힐라</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="6392127" id="hard"><img src="Source/Hard-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>파풀라투스</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="24692607" id="chaos"><img src="Source/Chaos-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>피에르</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="9082212" id="chaos"><img src="Source/Chaos-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>반반</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="9055409" id="chaos"><img src="Source/Chaos-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>블러디퀸</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="9044348" id="chaos"><img src="Source/Chaos-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>벨룸</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="11625317" id="chaos"><img src="Source/Chaos-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>핑크빈</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="7305607" id="chaos"><img src="Source/Chaos-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>시그너스</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="5059464" id="easy"><img src="Source/Easy-disabled.png"></button>
+          <button class="list-item" data-value="8334633" id="normal"><img src="Source/Normal-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>스우</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="31397803" id="easy"><img src="Source/Easy-disabled.png"></button>
+          <button class="list-item" data-value="112707970" id="hard"><img src="Source/Hard-disabled.png"></button>
+          <button class="list-item" data-value="300000000" id="extreme"><img src="Source/Extreme-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>데미안</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="32856018" id="normal"><img src="Source/Normal-disabled.png"></button>
+          <button class="list-item" data-value="107165492" id="hard"><img src="Source/Hard-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name">
+        <h3>가디언 엔젤 슬라임</h3>
+      </td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="43430893" id="normal"><img src="Source/Normal-disabled.png"></button>
+          <button class="list-item" data-value="152450582" id="chaos"><img src="Source/Chaos-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>루시드</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="44480040" id="easy"><img src="Source/Easy-disabled.png"></button>
+          <button class="list-item" data-value="53238340" id="normal"><img src="Source/Normal-disabled.png"></button>
+          <button class="list-item" data-value="128478755" id="hard"><img src="Source/Hard-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"> <h3>윌</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="48271991" id="easy"><img src="Source/Easy-disabled.png"></button>
+          <button class="list-item" data-value="61407942" id="normal"><img src="Source/Normal-disabled.png"></button>
+          <button class="list-item" data-value="142163005" id="hard"><img src="Source/Hard-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>더스크</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="65802229" id="normal"><img src="Source/Normal-disabled.png"></button>
+          <button class="list-item" data-value="157064123" id="chaos"><img src="Source/Chaos-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>진 힐라</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="145210130" id="normal"><img src="Source/Normal-disabled.png"></button>
+          <button class="list-item" data-value="190205043" id="hard"><img src="Source/Hard-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>듄켈</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="70960004" id="normal"><img src="Source/Normal-disabled.png"></button>
+          <button class="list-item" data-value="168568855" id="hard"><img src="Source/Hard-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>검은 마법사</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="1420765035" id="hard"><img src="Source/Hard-disabled.png"></button>
+          <button class="list-item" data-value="6098133047" id="extreme"><img src="Source/Extreme-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"><h3>선택받은 세렌</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="219903983" id="normal"><img src="Source/Normal-disabled.png"></button>
+          <button class="list-item" data-value="304012024" id="hard"><img src="Source/Hard-disabled.png"></button>
+          <button class="list-item" data-value="1295130572" id="extreme"><img src="Source/Extreme-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name"> <h3>감시자 칼로스</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="257246593" id="easy"><img src="Source/Easy-disabled.png"></button>
+          <button class="list-item" data-value="352824884" id='normal'><img src="Source/Normal-disabled.png"></button>
+          <button class="list-item" data-value="723340156" id="chaos"><img src="Source/Chaos-disabled.png"></button>
+          <button class="list-item" data-value="1454987909" id="extreme"><img src="Source/Extreme-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3>명</h3>
+      </td>
+    </tr>
+
+    <tr class="group">
+      <td id="boss-name" class="boss-name-last"><h3>카링</h3></td>
+      <td id="boss-difficulty">
+        <div class="list-container">
+          <button class="list-item" data-value="283544560" id="easy"><img src="Source/Easy-disabled.png"></button>
+          <button class="list-item" data-value="412259413" id="normal"><img src="Source/Normal-disabled.png"></button>
+          <button class="list-item" data-value="844507029" id="hard"><img src="Source/Hard-disabled.png"></button>
+          <button class="list-item" data-value="1697485894" id="extreme"><img src="Source/Extreme-disabled.png"></button>
+        </div>
+      </td>
+      <td class="party-people-number-container" id="spinner-last">
+        <input type="number" id="spinner" class="spinner" value = "1" min="1" max="6">
+        <h3 class="spinner-text">명</h3>
+      </td>
+    </tr>
+
+
+  </tbody>
+  </table>
+
+</div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

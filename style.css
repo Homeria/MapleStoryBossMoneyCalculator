@@ -1,0 +1,184 @@
+@font-face {
+    font-family : 'MapleStory';
+    src : url('Source/Maplestory\ Light.ttf') format('ttf'),
+            url('Source/Maplestory\ Bold.ttf') format('ttf');
+    font-weight : normal;
+    font-style : normal
+}
+
+body {
+    font-family : 'MapleStory', sans-serif;
+}
+
+#ui-container {
+    background-color : #333333;
+    width : 995px;
+    border-radius : 5px 5px 5px 5px;
+    padding : 12.5px 12.5px 12.5px 12.5px
+}
+
+.wrapper {
+    display : flex;
+    justify-content : space-between;
+}
+
+.title {
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : left;
+}
+
+.title > h1 {
+    text-align : center;
+    margin-left : 10px;
+    margin-right : 10px;
+    color : #232323;
+}
+
+#kr {
+    margin-left : 20px;
+    color : #e1ff00;
+}
+
+#en {
+    color : white;
+    font-size : 24px;
+}
+
+
+#output {
+    margin-left : 20px;
+    font-size : 24px;
+    color : white;
+}
+
+.reset-container {
+    display : flex;
+    justify-content : flex-end;
+    margin-right : 5px;
+}
+
+#reset {
+    margin-bottom : 10px;
+    border-radius : 7.5px 7.5px 7.5px 7.5px;
+    padding : 10px 10px 10px 10px;
+    font-size : 18px;
+    background-color : #232323;
+    color : white;
+    font-family : 'MapleStory', sans-serif;
+    
+}
+
+table {
+    border-spacing : 0;
+}
+
+#boss-name {
+    background-color : #232323;
+    vertical-align : middle;
+    text-align : center;
+}
+
+.boss-name-first {
+    border-radius : 10px 0px 0px 0px
+}
+
+.boss-name-last {
+    border-radius : 0px 0px 0px 10px;
+}
+
+td > h3 {
+    text-align : center;
+}
+
+#boss-name > h3 {
+    
+    width : 200px;
+    height : 49px;
+    margin-top : 0px;
+    margin-bottom : 0px;
+    margin-left : 7.5px;
+    margin-right : 7.5px;
+    border-radius : 7.5px 7.5px 7.5px 7.5px;
+    background-color : #333333;
+    color : white;
+    justify-content : center;
+    align-items : center;
+    line-height : 50px;
+    font-size : 24px;
+}
+
+#boss-difficulty {
+    background-color : #232323;
+}
+
+.list-container {
+    display: flex;
+}
+
+.list-item:first-child {
+    margin-left : 7.5px;
+}
+
+.list-item {
+    cursor: pointer;
+    background-color : #333333;
+    border-radius : 7.5px 7.5px 7.5px 7.5px;
+    margin-bottom : 0px;
+    margin-top : 0px;
+    margin-left : 0px;
+    margin-right : 5px;
+}
+
+.list-item#easy:not(.selected) img:hover {
+    content: url('Source/Easy-hover.png');
+}
+
+.list-item#normal:not(.selected) img:hover {
+    content: url('Source/Normal-hover.png');
+}
+
+.list-item#hard:not(.selected) img:hover {
+    content: url('Source/Hard-hover.png');
+}
+
+.list-item#chaos:not(.selected) img:hover {
+    content: url('Source/Chaos-hover.png');
+}
+
+.list-item#extreme:not(.selected) img:hover {
+    content: url('Source/Extreme-hover.png');
+}
+
+.party-people-number-container {
+    display : flex;
+    background-color : #232323;
+}
+
+.party-people-number-container > h3 {
+    display : flex;
+    color : white;
+    margin-right : 10px;
+    
+}
+
+.spinner {
+    width : 50px;
+    font-size : 30px;
+    text-align : center;
+    margin-right : 10px;
+    background-color : #333333;
+    color : white;
+    font-family : 'MapleStory', sans-serif;
+}
+
+#spinner-first {
+    border-radius : 0px 7.5px 0px 0px;
+}
+
+#spinner-last {
+    border-radius : 0px 0px 7.5px 0px;
+}
+
+
