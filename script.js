@@ -1,11 +1,20 @@
+let count = 0;
+const MAX_SELECTION = 12;
+
 function initializeButtonGroup(group) {
     const buttons = group.querySelectorAll('.list-item');
     const spinner = group.querySelector('.spinner');
 
     buttons.forEach(button => {
         button.addEventListener('click', function () {
+
             const img = this.querySelector('img');
             const isSelected = this.classList.contains('selected');
+
+            if(!isSelected && count >= MAX_SELECTION) {
+                alert("최대 선택 가능한 보스 수를 초과했습니다.\n최대 보스 개수는 12개 입니다.");
+                return;
+            }
 
             // Remove the selected class and change image for all buttons in the group
             buttons.forEach(btn => {
@@ -36,10 +45,13 @@ function initializeButtonGroup(group) {
 }
 
 function updateOutput() {
+    let c = 0
     const output = document.getElementById('output');
+    const choose_num = document.getElementById('choose-num')
     const selectedButtons = document.querySelectorAll('.group button.selected');
 
     let totalValue = Array.from(selectedButtons).reduce((sum, btn) => {
+        c += 1
         const group = btn.closest('.group');
         const spinner = group.querySelector('.spinner');
         const spinnerValue = parseInt(spinner.value, 10);
@@ -50,6 +62,8 @@ function updateOutput() {
 
     const formattedTotal = totalValue.toLocaleString();
     output.innerText = `결정석 값 총합 : ${formattedTotal}`;
+    choose_num.innerText =`${c}개`
+    count = c
 }
 
 function resetSelections() {
